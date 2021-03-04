@@ -22,7 +22,7 @@ app.use(express.static("public"));
 
 
 //rota correios
-app.get("/Correios", (req, res) => {
+app.get("/", (req, res) => {
     var Valor = req.body.CEP
     let mensagem =""
   
