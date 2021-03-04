@@ -21,7 +21,7 @@ app.set("views");
 app.use(express.static("public"));
 
 
-//rota correios
+//rota inicial
 app.get("/", (req, res) => {
     var Valor = req.body.CEP
     let mensagem =""
