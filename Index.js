@@ -52,9 +52,7 @@ app.post("/Cep", (req,res)=>{
 .catch(error => {
  
   console.log(error)
-});
-
-  
+});  
 })
 
 //configuração porta http 3000

@@ -1,0 +1,83 @@
+#back {
+  background-image: url("imagem.png");
+  background-size: cover;
+}
+
+#back2 {
+  height: 753px;
+  background-color: gray;
+}
+
+#font {
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+h1,
+h4 {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: black;
+  opacity: 0.1;
+}
+
+h2,
+h3 {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: black;
+}
+
+h1,
+h4:hover {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: black;
+  opacity: 1;
+  transition: 2s;
+}
+
+.espaco {
+  margin-top: 10px;
+  height: 100px;
+}
+
+.espacoef {
+  margin-top: 10px;
+  height: 100px;
+  opacity: 0;
+}
+
+.espacoef:hover {
+  margin-top: 10px;
+  height: 100px;
+  opacity: 1;
+  transition: 1s;
+}
+
+.espaco1 {
+  margin-bottom: 25px;
+  height: 110px;
+}
+
+.espaco1ef {
+  margin-bottom: 25px;
+  height: 110px;
+}
+
+.espaco1ef:hover {
+  margin-bottom: 25px;
+  height: 110px;
+  opacity: 1;
+  transition: 1s;
+}
+
+.espaco2 {
+  margin-top: 10px;
+  height: 85px;
+}
+
+img {
+  height: 80px;
+}
+
+input {
+  height: 80px;
+  width: 437px;
+}
