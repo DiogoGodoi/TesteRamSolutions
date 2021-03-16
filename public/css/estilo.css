@@ -6,7 +6,7 @@ nav{
 .card{
     background: rgb(13,9,54);
     background: linear-gradient(90deg, rgb(13,9,54,1) 0%, rgb(4,9,34,1) 37%, rgb(7,38,182,1) 100%);
-    opacity: 0.9;
+    opacity: 0.8;
     border-radius: 20px 20px 20px 20px;
 }
 

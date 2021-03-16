@@ -43,7 +43,7 @@ app.post("/Cep", (req,res)=>{
   let mensagem = "Cep Encontrado:"
   let op = req.body.op
 
-  if (op) {
+  if (op == 'busc') {
     correios.consultaCEP({ cep: Valor })
     .then(result => {
     res.render('Correios.ejs', {result, mensagem})

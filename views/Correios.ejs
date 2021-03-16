@@ -23,7 +23,7 @@
     <div class="container-fluid col-8" style="height: 230px;">
 
      <center>
-      <div class="col-8" style="margin-top: 70px;"> 
+      <div class="col-8" style="margin-top: 50px;"> 
 
         <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel">
@@ -74,25 +74,22 @@
     </div>
 
       <div class="container-fluid col-12" style="height: 268px;">
-       <% if(typeof result =="") { %>
-        <h1>NADA</h1>
-       <% }else if (typeof result !=="") { %>  
         <center>
           <div class="card col-5">
-           <h5 class="card-header"> <%= mensagem %></h5> 
-            <div class="card-body"> 
-               <p class="card-text"><%= result.logradouro %></p>
-                <p class="card-text"><%= result.bairro %></p>
+           <h5 class="card-header">Resultado</h5> 
+           </div> 
+            <div class="card col-5">
+             <h5 class="card-header"> <%= mensagem %></h5> 
+              <div class="card-body"> 
+                <p class="card-text"><%= result.logradouro %></p>
+                 <p class="card-text"><%= result.bairro %></p>
                   <p class="card-text"><%= result.localidade %></p>
                     <p class="card-text"><%= result.uf %></p>
          </center> 
-       <% } %> 
-                     
-        </div>
        </div>
       </div>  
 
-      <footer id="idcard">
+      <footer id="idcard" style="margin-top: 20px;">
         <footer id="idheader">
           Teste de habilidade de desenvolvimento
         </footer>
