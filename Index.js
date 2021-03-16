@@ -25,15 +25,14 @@ app.use(express.static("public"));
 app.get("/", (req, res) => {
     var Valor = req.body.CEP
     let mensagem =""
-  
-    //Objeto vazio para receber os dados da api
+ 
     let result = {    
       logradouro: '',
       bairro: '',
       localidade: '',
       uf: '',
     }
-
+    //Objeto vazio para receber os dados da api
     res.render("Correios.ejs", {Valor, result, mensagem})
 })
 
@@ -42,19 +41,22 @@ app.get("/", (req, res) => {
 app.post("/Cep", (req,res)=>{
   var Valor = req.body.CEP
   let mensagem = "Cep Encontrado:"
+  let op = req.body.op
 
- //Função de consulta de cep da api 
- correios.consultaCEP({ cep: Valor })
-.then(result => {
-  res.render('Correios.ejs', {result, mensagem})
-  console.log(result);
-})
-.catch(error => {
- 
-  console.log(error)
-});  
+  if (op) {
+    correios.consultaCEP({ cep: Valor })
+    .then(result => {
+    res.render('Correios.ejs', {result, mensagem})
+    console.log(result);
+   })
+   .catch(error => {
+   console.log(error)
+   }); 
+   }else {
+
+  }
+
 })
 
-//configuração porta http 3000
 app.listen(3000)
 

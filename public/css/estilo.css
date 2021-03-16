@@ -1,83 +1,58 @@
-#back {
-  background-image: url("imagem.png");
-  background-size: cover;
+nav{
+    background: rgb(13,9,54);
+    background: linear-gradient(90deg, rgb(13,9,54,1) 0%, rgb(4,9,34,1) 37%, rgb(7,38,182,1) 100%);
 }
 
-#back2 {
-  height: 753px;
-  background-color: gray;
+.card{
+    background: rgb(13,9,54);
+    background: linear-gradient(90deg, rgb(13,9,54,1) 0%, rgb(4,9,34,1) 37%, rgb(7,38,182,1) 100%);
+    opacity: 0.9;
+    border-radius: 20px 20px 20px 20px;
 }
 
-#font {
-  font-family: Georgia, "Times New Roman", Times, serif;
+
+#idcard{
+    background: rgb(13,9,54);
+    background: linear-gradient(90deg, rgb(13,9,54,1) 0%, rgb(4,9,34,1) 37%, rgb(7,38,182,1) 100%);
+    border-radius: 20px 20px 20px 20px;
 }
 
-h1,
-h4 {
-  font-family: Georgia, "Times New Roman", Times, serif;
-  color: black;
-  opacity: 0.1;
+#idheader{
+    background-color: white;
+    font-family: NewFont;
+    color: black;
 }
 
-h2,
-h3 {
-  font-family: Georgia, "Times New Roman", Times, serif;
-  color: black;
+.card:hover{
+    opacity: 1;
+    transition: 0.2s;
 }
 
-h1,
-h4:hover {
-  font-family: Georgia, "Times New Roman", Times, serif;
-  color: black;
-  opacity: 1;
-  transition: 2s;
+.card-header{
+    background-color: white;
+    font-family: NewFont;
+    opacity: 1;
+    color: black;
 }
 
-.espaco {
-  margin-top: 10px;
-  height: 100px;
+.card-title, p, h4, footer{
+    color: white;
+    font-family: NewFont;
 }
 
-.espacoef {
-  margin-top: 10px;
-  height: 100px;
-  opacity: 0;
+.carousel-item{
+    transition: 0.2s;
+    transition-delay: 0.2;
 }
 
-.espacoef:hover {
-  margin-top: 10px;
-  height: 100px;
-  opacity: 1;
-  transition: 1s;
+body{
+    background-image: url("fundoback.jpg");
+    background-size: cover;
 }
 
-.espaco1 {
-  margin-bottom: 25px;
-  height: 110px;
-}
-
-.espaco1ef {
-  margin-bottom: 25px;
-  height: 110px;
-}
-
-.espaco1ef:hover {
-  margin-bottom: 25px;
-  height: 110px;
-  opacity: 1;
-  transition: 1s;
-}
-
-.espaco2 {
-  margin-top: 10px;
-  height: 85px;
-}
-
-img {
-  height: 80px;
-}
-
-input {
-  height: 80px;
-  width: 437px;
+@font-face {
+    font-family: NewFont;
+    src: url('newFont.ttf');
+    font-size: 45px;
+    font-weight: 200px;
 }
